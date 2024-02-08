@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.email-icon {
+color: #ff4fe8;
+font-size: 125px; 
+max-width: 100px;
+max-height: 100px;
+margin-bottom: 10px;
+margin-right: 25px;
+}
+
+
+.open-message {
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.open-message a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
+}

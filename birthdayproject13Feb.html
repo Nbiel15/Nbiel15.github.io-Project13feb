@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthdayy 🥳🖕😁</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+    
+        body {
+            font-family: 'Single Day', Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #e8d1c5;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .birthday-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .birthday-card {
+            max-width: 300px;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #eddcd2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .birthday-card.open {
+            max-height: 1000px;
+        }
+
+        .cake-icon {
+            color: #ff2fdc;
+            font-size: 100px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .video-container {
+            max-height: 100%; 
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .Lagu {
+            margin-top: 20px;
+        }
+
+        audio {
+            margin-top: 10px;
+        }
+
+        .pdf-button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        @keyframes openCard {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+
+        .birthday-card.open {
+            animation: openCard 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-container">
+        <div class="birthday-card open">
+            <img class="card-image" src="Gambar.png" alt="Birthday Image">
+        </div>
+
+        <div class="birthday-card open">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <i class="fas fa-birthday-cake cake-icon"></i>
+            <br>
+            <br>
+            <h2>Happy Bday BaliGiss😁</h2>
+            <br>
+            <br>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Happy sweet 17 BaliGiss😁</p>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Haloo giss happy bday yaa, poin pertama mau tanya ini web nilainya berapa ya? karena aku bukan anak hacker jadi sebisanya aja hehe, poin kedua ucapan terimakasih dari aku atas semua susah senang yang aku terima sendiri dari berbagai pelajarn, Poin ketiga ucapan selamat buat Balgis Sidqi Al Mukarromah untuk naik level nya jadi 17 🥳💐</p>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Aku bingung ape nyampaino apalagi giss pokok selmat deh, terus buat janji ku share Diary About Balgis tinggal buka ae disini</p>
+            <audio id="myAudio" autoplay>
+                <source src="LaguBali.mp3" type="audio/mp3">
+                Play Lagu
+            </audio>
+            <a class="pdf-button" href="Baligis.txt" target="_blank">Buka File PDF</a>
+        </div>
+
+        <div class="birthday-card open">
+            <div class="video-container">
+                <br>
+                <video width="100%" height="100%" autoplay loop muted>
+                    <source src="Vid1.mp4" type="video/mp4">
+                </video>
+            
+                <video width="100%" height="100%" autoplay loop muted>
+                    <source src="vid2.mp4" type="video/mp4">
+                </video>
+            
+                <video width="100%" height="100%" autoplay loop muted>
+                    <source src="vid6.mp4" type="video/mp4">
+                </video>
+            
+                <video width="100%" height="100%" autoplay loop muted>
+                    <source src="vid4.mp4" type="video/mp4">
+                </video>
+            
+                <video width="100%" height="100%" autoplay loop muted>
+                    <source src="Vid5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var birthdayCard = document.querySelectorAll(".birthday-card.open");
+            birthdayCard.forEach(function(card) {
+                card.classList.add("open");
+            });
+        });
+    </script>
+</body>
+</html>
